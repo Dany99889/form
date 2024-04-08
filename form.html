@@ -3,22 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulaire d'inscription</title>
     <style>
-        form {
-        text-align: ;
-            }
+       
     </style>
 </head>
 <body>
     <form>
         <label for="nom">Nom:</label>
-        <input type="text" id="nom" name="nom" value="Dupont" tabindex="1"><br><br>
+        <input type="text" id="nom" name="nom" placeholder="Dupont" tabindex="1"><br><br>
         <label for="prenom">Prénom:</label>
-        <input type="text" id="prenom" name="prenom" value="Daniel" tabindex="2"><br><br>
+        <input type="text" id="prenom" name="prenom" placeholder="Daniel" tabindex="2"><br><br>
 
         <label for="age">Age:</label>
-        <input type="number" id="age" name="age" value="30" tabindex="3" maxlength="99"><br> <br>   
+        <input type="number" id="age" name="age" value="30" tabindex="3" max="99"><br> <br>   
 
         <label>Sexe:</label>
         <input type="checkbox" id="masculin" name="genre" value="masculin" tabindex="7">
@@ -27,14 +25,14 @@
         <label for="feminin">Féminin</label><br> <br>
 
         <label for="email">Adresse Mail:</label>
-        <input type="text" id="email" name="email" value="exemple@simplon.com" tabindex="9"><br><br>
+        <input type="text" id="email" name="email" placeholder="exemple@simplon.com" tabindex="9"><br><br>
 
         <label for="adressepostale"> Adresse postale:</label>
-        <input type="text" id="adressepostale" name="Adresse postale" value="chaussée au moine" tabindex="10">
+        <input type="text" id="adressepostale" name="Adresse postale" placeholder="chaussée au moine" tabindex="10">
         <label for="codepostal">Code Postal</label>
-        <input type="number" id="codepostal" name="codepostal" pattern="[0-9]{5}" value="75018">
+        <input type="number" id="codepostal" name="codepostal" pattern="[0-9]{5}" placeholder="75018">
         <label for="ville"> Ville</label>
-        <input type="text" id="ville" name="ville" value="Paris" tabindex="11"><br><br>
+        <input type="text" id="ville" name="ville" placeholder="Paris" tabindex="11"><br><br>
 
         <label for="metier">Métier exercé :</label>
         <select name="metier" id="metier">
@@ -47,7 +45,7 @@
 
         <label for="nationalite">Nationalité :</label>
         <select name="nationalite" id="nationalite">
-            <option value="" selected abled>Choisissez une nationalité</option>
+            <option value="Choisir">Choisissez une nationalité</option>
             <option value="francaise" selected>Française</option>
             <option value="allemande">Allemande</option>
             <option value="americaine">Américaine</option>
@@ -55,7 +53,7 @@
         </select>
             <br><br>
 
-        <label for="datedenaissance">Date de Naissance</label><br>
+        Date de Naissance<br>
         <label for="jour">Jour:</label>
         <input type="number" id="jour" name="jour" value="01" min="1" max="31" tabindex="14">
         <label for="mois">Mois:</label>
@@ -64,24 +62,22 @@
         <input type="number" id="annee" name="annee" value="1990" min="1900" max="2010" tabindex="16"><br><br>
 
         <label for="paysdenaissance">Pays de naissance</label> 
-        <input type="text" id="paysdenaissance" name="paysdenaissance" value="France" tabindex="17"><br><br>
+        <input type="text" id="paysdenaissance" name="paysdenaissance" placeholder="France" tabindex="17"><br><br>
 
         <label for="numeross">Numéro de Sécurité Social</label>
-        <input type="number" id="numeross" name="numeross" value="0123456789" maxlength="15" tabindex="18"><br><br>
+        <input type="number" id="numeross" name="numeross" placeholder="2123456789" max="15" tabindex="18"><br><br>
 
         <label for="numpasseport">Numéro de Passeport</label>
-        <input type="number" id="numpasseport" name="numpasseport" value="0123456789" maxlength="9" tabindex="19">
+        <input type="number" id="numpasseport" name="numpasseport" placeholder="0123456789" max="9" tabindex="19">
 
         <label for="datedelivpasseport"> Date de délivrance du passeport</label>
-        <input type="date">><br><br>
+        <input type="date" id="datedelivpasseport">><br><br>
 
         <label for="datevalidpasseport"> Date de validité du passeport</label>
-        <input type="date"><br><br>
+        <input type="date" id="datevalidpasseport"> <br><br>
 
         <input type="submit" value="Envoyer" tabindex="26">
-
-
-
-        
+</form>
+ 
 </body>
 </html>
